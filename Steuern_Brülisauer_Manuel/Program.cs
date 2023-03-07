@@ -5,7 +5,6 @@
         static void Main(string[] args)
         {
             Finanzamt finanzamt = new Finanzamt();
-            //List<ISteuerzahler> Steuerzahlende = new List<ISteuerzahler>();
             ISteuerzahler[] Steuerzahlende = new ISteuerzahler[5];
 
             Person Joe_Miller = new Person(6400);

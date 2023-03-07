@@ -9,10 +9,22 @@ namespace Steuern_Brülisauer_Manuel
 {
     public class Person : ISteuerzahler
     {
+        /// <summary>
+        /// Is the base constructor which all the different Persons refer to
+        /// </summary>
+        /// <param name="einkommen">Is the income which every Person has to define on creation and is used to calculate the taxes to be paid</param>
         public Person(int einkommen) {
         this.einkommen = einkommen;
         }
+        /// <summary>
+        /// Is the income which every Person has to define on creation and is used to calculate the taxes to be paid
+        /// </summary>
         protected int einkommen { get; set; }
+
+        /// <summary>
+        /// Is the base method for persons to calculate the taxes to be paid
+        /// </summary>
+        /// <returns>The taxes to be paid</returns>
         public virtual int berechneSteuer() 
         {
             double steuern = einkommen / 4;

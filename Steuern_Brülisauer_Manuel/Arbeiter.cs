@@ -8,10 +8,18 @@ namespace Steuern_Brülisauer_Manuel
 {
     public class Arbeiter : Person
     {
+        /// <summary>
+        /// Constructor connected to the constructor of Person
+        /// </summary>
+        /// <param name="einkommen">Defines the income that a person has which is also used to claculate the taxes to pay</param>
         public Arbeiter(int einkommen) : base(einkommen)
         {
 
         }
+        /// <summary>
+        /// Override of the basic berechneSteuer method of the Person class for workers specifically
+        /// </summary>
+        /// <returns>The taxes to be paid</returns>
         public override int berechneSteuer()
         {
             double steuern = einkommen / 4;
