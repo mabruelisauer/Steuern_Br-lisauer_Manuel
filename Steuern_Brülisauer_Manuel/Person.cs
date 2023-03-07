@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Steuern_Brülisauer_Manuel
 {
-    internal class Person : ISteuerzahler
+    public class Person : ISteuerzahler
     {
         public Person(int einkommen) {
         this.einkommen = einkommen;

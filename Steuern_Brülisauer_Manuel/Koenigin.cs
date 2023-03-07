@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Steuern_Brülisauer_Manuel
 {
-    internal class Koenigin : Person
+    public class Koenigin : Person
     {
         public Koenigin(int einkommen) : base(einkommen)
         {

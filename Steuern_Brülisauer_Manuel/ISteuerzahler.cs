@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Steuern_Brülisauer_Manuel
 {
-    interface ISteuerzahler
+    public interface ISteuerzahler
     {
         int berechneSteuer();
 

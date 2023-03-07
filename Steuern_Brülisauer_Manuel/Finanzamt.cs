@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Steuern_Brülisauer_Manuel
 {
-    internal class Finanzamt
+    public class Finanzamt
     {
         public int BerechneSteuer(ISteuerzahler[] steuerzahler) {
 

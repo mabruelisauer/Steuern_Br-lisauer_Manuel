@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Steuern_Brülisauer_Manuel
 {
-    internal class Unternehmen : ISteuerzahler
+    public class Unternehmen : ISteuerzahler
     {
         public Unternehmen(int gewinn)
         {
